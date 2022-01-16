@@ -9,7 +9,7 @@ import javax.persistence.Table;
 public class Score {
 
 	@EmbeddedId
-	private ScorePK id = new ScorePK();
+	private ScorePk id = new ScorePk();
 	
 	private Double value;
 	
@@ -24,11 +24,11 @@ public class Score {
 		id.setUser(user);
 	}
 	
-	public ScorePK getId() {
+	public ScorePk getId() {
 		return id;
 	}
 
-	public void setId(ScorePK id) {
+	public void setId(ScorePk id) {
 		this.id = id;
 	}
 
